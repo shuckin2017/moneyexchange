@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/shuckin2017/moneyexchange#readme",
   "devDependencies": {
+    "bootstrap-4-grid": "^3.4.0",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",

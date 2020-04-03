@@ -1,0 +1,48 @@
+.header 
+    min-height: 85px
+    @include flexbox()
+    align-items: center
+    &-logo
+        @include flexbox()
+        align-items: center
+        &__img
+            padding: 0 14px 0 0
+        &__title
+            text-transform: uppercase;
+            font-size: 20px
+            line-height: 24px
+            font-family: $font-logo-light
+            span
+                font-family: $font-logo-bold
+    
+    &-menu       
+        &__list
+            width: 100%
+            @include flexbox()
+            justify-content: space-between
+            & li
+                display: block
+                font-family: $font-Regular
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                & a
+                    color: $color-primary
+    &-auth
+        width: 100%
+        @include flexbox()
+        justify-content: flex-end
+        align-items: center
+        &_title
+            font-family: $font-Regular
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            margin: 0 0 0 17px   
+            & a
+                color: $color-primary
+                
+       
+                
