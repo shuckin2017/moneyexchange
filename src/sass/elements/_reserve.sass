@@ -1,0 +1,55 @@
+.reserve
+    position: relative
+    &::before
+        background: linear-gradient(180deg, #EFF2FA 0%, rgba(255, 255, 255, 0) 96.57%)
+        content: ""
+        width: 100%
+        height: 100px
+        position: absolute
+        display: block 
+        top: -200px
+        z-index: -1
+        left: 0
+        
+    &_title
+        font-family: $font-Medium
+        font-size: 35px
+        line-height: 111.9%
+        color: $color-secondary
+        text-align: center
+        padding: 142px 0 100px 0 
+    &-block
+        margin: 0 0 85px 0
+        &-item
+            width: 
+            @include flexbox()
+            &_icon
+                width: 52.57px
+                height: 52.57px              
+                border-radius: 100%
+                @include flexbox()
+                align-items: center
+                justify-content: center
+                margin: 0 32px 0 0
+            & .color-1
+                background: lighten(#FFA800, 40% )
+            & .color-2
+                background: lighten(#536CC3, 40% )
+            & .color-3
+                background: lighten(#2B9E2F, 50% )
+            & .color-4
+                background: lighten(#03A9F4, 40% )
+            & .color-5
+                background: lighten(#DA251C, 40% )
+            &-text
+                &_title
+                    font-family: $font-Regular
+                    font-size: 16px
+                    line-height: 19px
+                    color: #A4AABF
+                    padding: 0 0 5px 0
+                &_number    
+                    font-family: $font-summ
+                    font-size: 20px
+                    line-height: 155.5%
+                    color: $color-secondary

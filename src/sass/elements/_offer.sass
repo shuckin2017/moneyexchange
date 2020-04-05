@@ -1,0 +1,58 @@
+.offer
+    @include flexbox()
+    justify-content: center
+    &-block
+        width: 1238px
+        min-height: 100px
+        background: linear-gradient(163.51deg, #562EC2 29.59%, #A07EFE 73.59%)
+        opacity: 0.8
+        border-radius: 17px
+        @include flexbox()
+        justify-content: flex-end
+        padding: 80px 132px
+        position: absolute
+        &::before
+            content: ""
+            width: 830px
+            height: 840px
+            background: url('../img/offer-bg.svg') no-repeat
+            position: absolute
+            display: block 
+            top: -180px
+            left: -100px
+            z-index: 5
+            background-size: cover
+        &::after
+            content: ""
+            width: 1064px
+            height: 341px
+            background: linear-gradient(165.24deg, #562EC2 29.59%, #A07EFE 73.59%)
+            filter: blur(150px)
+            border-radius: 17px
+            position: absolute
+            display: block 
+            top: 100px
+            left: 100px
+            z-index: 1
+        &-text
+            width: 467px
+            z-index: 10
+            &_title
+                font-family: $font-Medium
+                font-size: 35px
+                line-height: 132.4%
+                color: $color-white
+                padding: 0 0 20px 0
+            &_desc
+                font-family: $font-Regular
+                font-size: 18px
+                line-height: 166.5%
+                color: $color-white
+                opacity: 0.7
+                padding: 0 0 50px 0
+            &_button
+                font-family: $font-Medium
+                font-size: 16px
+                line-height: 19px
+                text-align: center
+                color: #9F7DFD
